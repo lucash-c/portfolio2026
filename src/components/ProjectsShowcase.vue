@@ -24,7 +24,7 @@
   </div>
 
   <q-dialog v-model="dlg">
-    <q-card class="bg-grey-10 text-white" style="min-width: 360px; max-width: 740px">
+    <q-card class="bg-grey-10 text-white project-dialog-card">
       <q-card-section class="row items-center justify-between">
         <div class="text-h6 text-weight-bold">{{ selected?.name }}</div>
         <q-btn flat round icon="close" v-close-popup />
@@ -156,5 +156,8 @@ function go(url) {
 .project-card:hover {
   transform: translateY(-4px);
   border-color: rgba(0, 174, 255, 0.55);
+}
+.project-dialog-card {
+  width: min(92vw, 740px);
 }
 </style>
