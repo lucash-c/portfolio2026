@@ -11,9 +11,7 @@
         <div class="q-mt-md text-grey-4">
           <div><q-icon name="mail" class="q-mr-sm" /> lucash_c@yahoo.com.br</div>
           <div class="q-mt-sm"><q-icon name="call" class="q-mr-sm" /> +55 (19) 99141-4411</div>
-          <div class="q-mt-sm">
-            <q-icon name="location_on" class="q-mr-sm" /> Santa Bárbara d’Oeste - SP
-          </div>
+          <div class="q-mt-sm"><q-icon name="location_on" class="q-mr-sm" /> Americana - SP</div>
         </div>
 
         <div class="row q-gutter-sm q-mt-lg">
@@ -21,21 +19,17 @@
           <q-btn
             outline
             color="white"
-            icon="code"
+            icon="fa-brands fa-github"
             label="GitHub"
             @click="open('https://github.com/lucash-c')"
           />
           <q-btn
             outline
             color="white"
-            icon="linkedin"
+            icon="fa-brands fa-linkedin"
             label="LinkedIn"
             @click="open('https://www.linkedin.com/in/lucas-henrique-de-campos-9763a7142')"
           />
-        </div>
-
-        <div class="q-mt-md text-grey-5">
-          *Facebook eu deixei fora do portfólio por ser um canal mais pessoal.
         </div>
       </div>
 

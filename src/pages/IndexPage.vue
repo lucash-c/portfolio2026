@@ -73,11 +73,7 @@
 
       <!-- SKILLS -->
       <section id="skills" class="q-mt-xl">
-        <SectionTitle
-          kicker="HABILIDADES"
-          title="O que eu entrego bem"
-          subtitle="Mistura de front bonito + back sólido + maturidade de equipe e liderança."
-        />
+        <SectionTitle kicker="HABILIDADES" title="O que eu entrego bem" />
         <SkillsGrid class="q-mt-md" />
       </section>
 
@@ -88,7 +84,7 @@
           title="Projetos e cases"
           subtitle="Projetos alinhados ao que costuma ser exigido em sistemas públicos e corporativos."
         />
-        <ProjectsShowcase class="q-mt-md" />
+        <ProjectsShowcase class="q-mt-x1" />
       </section>
 
       <!-- EXPERIÊNCIA -->

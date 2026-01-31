@@ -51,13 +51,6 @@
       <div class="q-pa-md row items-center justify-between">
         <div>© {{ new Date().getFullYear() }} Lucas Henrique Campos</div>
         <div class="row items-center q-gutter-sm">
-          <q-btn flat round icon="code" @click="open('https://github.com/lucash-c')" />
-          <q-btn
-            flat
-            round
-            icon="linkedin"
-            @click="open('https://www.linkedin.com/in/lucas-henrique-de-campos-9763a7142')"
-          />
           <q-btn flat round icon="email" @click="open('mailto:lucash_c@yahoo.com.br')" />
         </div>
       </div>
