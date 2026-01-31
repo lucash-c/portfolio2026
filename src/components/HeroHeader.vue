@@ -3,23 +3,23 @@
     <div class="hero-bg" aria-hidden="true"></div>
 
     <div class="container q-px-md">
-      <div class="row items-center q-col-gutter-xl" style="min-height: 540px">
+      <div class="row items-center q-col-gutter-xl hero-row">
         <div class="col-12 col-md-7">
           <div class="pill q-mb-md">
             <q-icon name="verified" class="q-mr-sm" />
           </div>
 
-          <div class="text-h3 text-weight-bolder">
+          <div class="hero-title text-weight-bolder">
             Desenvolvedor <span class="text-primary">Fullstack</span> focado em<br />
             sistemas <span class="text-primary">confiáveis</span> e UI moderna.
           </div>
 
-          <div class="text-subtitle1 text-grey-4 q-mt-md">
+          <div class="hero-subtitle text-grey-4 q-mt-md">
             Formado em ADS (FATEC Americana). Experiência com migração de sistemas legados,
             Vue.js/Quasar no front e Node.js/Java (Spring Boot) no back-end.
           </div>
 
-          <div class="row q-gutter-sm q-mt-lg">
+          <div class="hero-actions q-mt-lg">
             <q-btn
               color="primary"
               unelevated
@@ -31,7 +31,7 @@
             <q-btn flat icon="smart_toy" label="Pitch (30s)" @click="dialog = true" />
           </div>
 
-          <div class="q-mt-lg text-grey-5">
+          <div class="hero-contact q-mt-lg text-grey-5">
             <q-icon name="location_on" class="q-mr-xs" />
             Santa Bárbara d’Oeste - SP •
             <q-icon name="mail" class="q-mx-xs" />
@@ -101,7 +101,7 @@
     </div>
 
     <q-dialog v-model="dialog">
-      <q-card class="bg-grey-10 text-white" style="min-width: 320px; max-width: 560px">
+      <q-card class="bg-grey-10 text-white hero-dialog-card">
         <q-card-section class="row items-center justify-between">
           <div class="text-h6 text-weight-bold">Pitch (30 segundos)</div>
           <q-btn flat round icon="close" v-close-popup />
@@ -152,7 +152,39 @@ function open(url) {
 .hero {
   position: relative;
   overflow: hidden;
-  padding-top: 28px;
+  padding-top: 24px;
+}
+.hero-row {
+  min-height: auto;
+}
+.hero-title {
+  font-size: clamp(1.9rem, 6vw, 2.6rem);
+  line-height: 1.2;
+}
+.hero-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-actions :deep(.q-btn) {
+  width: 100%;
+  justify-content: flex-start;
+}
+.hero-contact {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.social-row {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.social-btn {
+  width: 100%;
+  justify-content: flex-start;
 }
 .hero-bg {
   position: absolute;
@@ -183,5 +215,37 @@ function open(url) {
 }
 .profile-avatar img {
   object-fit: cover;
+}
+.hero-dialog-card {
+  width: min(92vw, 560px);
+}
+
+@media (min-width: 600px) {
+  .hero {
+    padding-top: 32px;
+  }
+  .hero-row {
+    min-height: 540px;
+  }
+  .hero-title {
+    font-size: clamp(2.4rem, 4vw, 3rem);
+  }
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+  .hero-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .hero-actions :deep(.q-btn) {
+    width: auto;
+  }
+  .social-row {
+    flex-direction: row;
+    align-items: center;
+  }
+  .social-btn {
+    width: auto;
+  }
 }
 </style>

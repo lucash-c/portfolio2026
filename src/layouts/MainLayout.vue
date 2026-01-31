@@ -3,7 +3,7 @@
     <q-header elevated class="glass">
       <q-toolbar class="q-px-md">
         <q-btn flat round icon="rocket_launch" aria-label="Logo" @click="scrollTo('top')" />
-        <q-toolbar-title class="text-weight-bold">
+        <q-toolbar-title class="text-weight-bold site-title">
           Lucas Henrique Campos <span class="text-primary">• Fullstack</span>
         </q-toolbar-title>
 
@@ -84,5 +84,13 @@ function open(url) {
   background: rgba(20, 20, 24, 0.6);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.site-title {
+  font-size: 1rem;
+}
+@media (min-width: 600px) {
+  .site-title {
+    font-size: 1.25rem;
+  }
 }
 </style>
