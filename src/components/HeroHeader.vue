@@ -31,14 +31,7 @@
             <q-btn flat icon="smart_toy" label="Pitch (30s)" @click="dialog = true" />
           </div>
 
-          <div class="hero-contact q-mt-lg text-grey-5">
-            <q-icon name="location_on" class="q-mr-xs" />
-            Santa Bárbara d’Oeste - SP •
-            <q-icon name="mail" class="q-mx-xs" />
-            lucash_c@yahoo.com.br •
-            <q-icon name="call" class="q-mx-xs" />
-            +55 (19) 99141-4411
-          </div>
+
 
           <div class="q-mt-md row items-center q-gutter-sm social-row">
             <q-btn

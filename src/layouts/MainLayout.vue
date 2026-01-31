@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf" class="bg-dark text-white">
     <q-header elevated class="glass">
       <q-toolbar class="q-px-md">
-        <q-btn flat round icon="rocket_launch" aria-label="Logo" @click="scrollTo('top')" />
+          <q-btn flat round icon="business_center" aria-label="Logo" @click="scrollTo('top')" />
         <q-toolbar-title class="text-weight-bold site-title">
           Lucas Henrique Campos <span class="text-primary">• Fullstack</span>
         </q-toolbar-title>
