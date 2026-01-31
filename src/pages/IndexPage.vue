@@ -19,7 +19,7 @@
               <div class="text-h6 text-weight-bold">Resumo</div>
               <div class="text-grey-4 q-mt-sm">
                 Sou desenvolvedor fullstack, formado em Análise e Desenvolvimento de Sistemas pela
-                FATEC Americana, com facilidade em aprender novas tecnologias de forma autodidata.
+                FATEC Americana.
                 Tenho experiência prática em front-end com Vue.js e Quasar, back-end com Node.js e
                 Java (Spring Boot), além de participação em migração de sistemas legados em ambiente
                 corporativo. Também tenho vivência em liderança, comunicação e trabalho em equipe.
