@@ -18,6 +18,10 @@ export default defineConfig((/* ctx */) => {
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
+      extras: [
+  'roboto-font',
+  'material-icons',
+  'fontawesome-v6'
       // 'ionicons-v4',
       // 'mdi-v7',
       // 'fontawesome-v6',
