@@ -4,6 +4,8 @@
 import { defineConfig } from '#q-app/wrappers'
 
 export default defineConfig((ctx) => {
+  const publicPath = process.env.PUBLIC_PATH || '/'
+
   return {
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
@@ -25,7 +27,7 @@ export default defineConfig((ctx) => {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build
     build: {
-        publicPath: ctx.dev ? '/' : '/portfolio2026/',
+      publicPath: ctx.dev ? '/' : publicPath,
       target: {
         browser: ['es2022', 'firefox115', 'chrome115', 'safari14'],
         node: 'node20',
@@ -46,8 +48,8 @@ export default defineConfig((ctx) => {
       // minify: false,
       // polyfillModulePreload: true,
       // distDir
-  extendViteConf(viteConf) {
-        viteConf.base = ctx.dev ? '/' : '/portfolio2026/'
+      extendViteConf(viteConf) {
+        viteConf.base = ctx.dev ? '/' : publicPath
       },
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
