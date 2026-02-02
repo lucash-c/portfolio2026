@@ -31,8 +31,6 @@
             <q-btn flat icon="smart_toy" label="Pitch (30s)" @click="dialog = true" />
           </div>
 
-
-
           <div class="q-mt-md row items-center q-gutter-sm social-row">
             <q-btn
               dense
@@ -117,7 +115,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import profileImg from 'src/assets/lucas-campos.jpg'
+import profileImg from 'src/assets/lucas-campos.jpeg'
 
 const dialog = ref(false)
 
