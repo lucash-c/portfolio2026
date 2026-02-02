@@ -63,7 +63,7 @@
               <img :src="profileImg" alt="Lucas Campos - Desenvolvedor Fullstack" />
             </q-avatar>
           </div>
-          <q-card class="glass-card q-pa-lg">
+          <q-card class="glass-card hero-card q-pa-lg">
             <div class="row items-center justify-between">
               <div class="text-h6 text-weight-bold">Destaques</div>
               <q-badge color="primary" text-color="white" label="Fullstack" />
@@ -211,6 +211,34 @@ function open(url) {
 }
 .hero-dialog-card {
   width: min(92vw, 560px);
+}
+
+@media (max-width: 599px) {
+  .hero {
+    padding-top: 12px;
+  }
+  .hero-title {
+    font-size: clamp(1.6rem, 8vw, 2.1rem);
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  .hero-actions {
+    gap: 10px;
+  }
+  .hero-actions :deep(.q-btn) {
+    padding: 10px 12px;
+  }
+  .social-row {
+    gap: 10px;
+  }
+  .profile-avatar {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  .hero-card {
+    padding: 18px !important;
+  }
 }
 
 @media (min-width: 600px) {

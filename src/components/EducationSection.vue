@@ -45,4 +45,10 @@
   backdrop-filter: blur(10px);
   border-radius: 16px;
 }
+
+@media (max-width: 599px) {
+  .glass-card {
+    padding: 18px !important;
+  }
+}
 </style>

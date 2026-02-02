@@ -2,7 +2,7 @@
   <div class="row q-col-gutter-lg">
     <div v-for="s in skills" :key="s.title" class="col-12 col-md-6">
       <q-card class="glass-card q-pa-lg">
-        <div class="row items-center no-wrap">
+        <div class="row items-center no-wrap skill-header">
           <q-avatar size="42px" class="bg-primary text-white">
             <q-icon :name="s.icon" />
           </q-avatar>
@@ -63,5 +63,24 @@ const skills = [
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 16px;
+}
+.skill-header {
+  gap: 12px;
+}
+
+@media (max-width: 599px) {
+  .glass-card {
+    padding: 18px !important;
+  }
+  .skill-header {
+    flex-wrap: wrap;
+  }
+  .skill-header :deep(.q-avatar) {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .skill-header .text-h6 {
+    font-size: 1.05rem;
+  }
 }
 </style>
