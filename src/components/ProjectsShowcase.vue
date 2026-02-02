@@ -2,7 +2,7 @@
   <div class="row q-col-gutter-lg">
     <div v-for="p in projects" :key="p.name" class="col-12 col-md-4">
       <q-card class="project-card q-pa-md" @click="open(p)">
-        <div class="row items-center justify-between">
+        <div class="row items-center justify-between project-header">
           <div class="text-h6 text-weight-bold">{{ p.name }}</div>
           <q-badge color="primary" text-color="white" :label="p.type" />
         </div>
@@ -15,7 +15,7 @@
           </q-chip>
         </div>
 
-        <div class="q-mt-md row items-center justify-between text-grey-5">
+        <div class="q-mt-md row items-center justify-between text-grey-5 project-meta">
           <div><q-icon name="insights" class="q-mr-xs" />{{ p.highlight }}</div>
           <q-icon name="arrow_forward" />
         </div>
@@ -159,5 +159,21 @@ function go(url) {
 }
 .project-dialog-card {
   width: min(92vw, 740px);
+}
+
+@media (max-width: 599px) {
+  .project-card {
+    padding: 16px !important;
+  }
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
 }
 </style>
