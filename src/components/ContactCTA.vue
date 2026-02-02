@@ -14,7 +14,7 @@
           <div class="q-mt-sm"><q-icon name="location_on" class="q-mr-sm" /> Americana - SP</div>
         </div>
 
-        <div class="row q-gutter-sm q-mt-lg">
+        <div class="row q-gutter-sm q-mt-lg cta-actions">
           <q-btn color="primary" unelevated icon="email" label="Enviar e-mail" @click="mailto()" />
           <q-btn
             outline
@@ -81,5 +81,21 @@ function mailto(withTemplate = false) {
     radial-gradient(600px 240px at 80% 20%, rgba(255, 0, 153, 0.2), transparent 60%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cta-actions :deep(.q-btn) {
+  justify-content: flex-start;
+}
+
+@media (max-width: 599px) {
+  .cta {
+    padding: 18px !important;
+  }
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-actions :deep(.q-btn) {
+    width: 100%;
+  }
 }
 </style>
